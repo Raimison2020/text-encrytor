@@ -1,5 +1,5 @@
 // const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,?!'_-&@#$%*()/:<>|+= ";
-const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,?!'_-&@#$%*()/:<>|+= áéíóúãõç";
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,?!'_-&@#$%*()/:<>|+= áâéíóúãõç";
 
 
 // Encryption function
@@ -35,7 +35,7 @@ function decryptText(encryptedText, key) {
         const encryptedIndex = alphabet.indexOf(encryptedChar);
         const keyIndex = alphabet.indexOf(keyChar);
 
-        if (encryptedText === -1) {
+        if (encryptedIndex === -1) {
             decryptedtext += encryptedChar;
         } else {
             let newIndex = encryptedIndex - keyIndex;
